@@ -16,30 +16,19 @@
 
 ## 安装
 
-> **尚未发布到 npm。** 下面的第一条命令需要等包发布后才能用；在此之前请用「本地安装」。
+从 [Releases](https://github.com/duduke-damowang/dsh-system-prompt-editor/releases) 下载
+`dsh-system-prompt-editor-1.0.0.tgz`，在 PowerShell 里执行一条命令：
 
-```sh
-# 发布后：
-dsh plugin --profile desktop add dsh-system-prompt-editor@1.0.0
+```powershell
+dsh plugin --profile desktop add "下载到的完整路径\dsh-system-prompt-editor-1.0.0.tgz"
 ```
 
-把 `--profile` 换成你的 profile 名（如 `desktop`、`web`）。
+`dsh` 不在 PATH 里，需要用完整路径调用；桌面端一般在 DSH 安装目录下的
+`resources\runtime\cli\bin\dsh.cmd`。
 
-**本地安装**（现在就能用）：把仓库放到本机任意目录，然后
+安装后**重启 DSH**，再打开 **设置 → 系统提示词**。
 
-```sh
-dsh plugin --profile desktop add link:/path/to/dsh-system-prompt-editor
-```
-
-或者手工在 profile 的 `package.json` 里加依赖、在 `dsh.profile.bundles` 里加包名，
-再在 profile 目录执行一次 pnpm 安装。`dsh plugin` 命令会自行处理依赖解析、
-profile 锁定与 bundle 组装，建议优先用它。
-
-安装后**需要重启 DSH** 才会加载。
-
-要求 DSH `0.2.0-rc.2`（`package.json` 的 `dshTarget`）。
-
-装好后打开 **设置 → 系统提示词**。
+要求 DSH `0.2.0-rc.2`（见 `package.json` 的 `dshTarget`）。
 
 ## 数据存放
 
