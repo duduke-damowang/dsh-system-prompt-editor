@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "System Prompts",
+    "description": "Keep multiple system prompts and switch the active one; the active prompt is injected into every following model assembly."
+  }
+}

@@ -1,0 +1,8 @@
+# dsh-system-prompt-editor bundle patch.
+#
+# One Host row for the prompt store, the injection section, the RPC route and
+# the switch command. The browser half is picked up from `dsh.client` in
+# package.json, so it needs no row of its own.
+- insert:
+    - id: system-prompt-editor
+      name: dsh-system-prompt-editor

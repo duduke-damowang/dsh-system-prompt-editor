@@ -1,0 +1,16 @@
+# Node
+node_modules/
+npm-debug.log*
+
+# Build artifacts that are regenerated
+*.tgz
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local scratch
+*.tmp
